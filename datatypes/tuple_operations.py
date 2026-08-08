@@ -1,4 +1,4 @@
-# create an empty list
+# create an empty tuple
 cityList = ()
 print(type(cityList))
 

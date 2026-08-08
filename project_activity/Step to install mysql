@@ -1,5 +1,44 @@
+# Install MySQL Workbench
+# Test with below DDLs
+
+    > create database proj_activity;
+    > show databases;
+    > use proj_activity;
+    > show tables;
+
+
+
+# Install MySQL Database plugin on your system/remote machine
+
+# python -m pip install mysql-connector-python
+# import mysql.connector
+# from mysql.connector import Error
+
+# conn = mysql.connector.connect(host='localhost', database='bankdb', user='root', password='root')
+# 127.0.0.1
+
+
+# To uninstall
+# pip uninstall mysql-connector-python
+
+
+
+
+
+Configure IntelliJ/PyCharm for Python Interpreter -
+1. Open your project.
+2. Go to Settings → Project → Python Interpreter.
+3. Ensure the interpreter is selected.
+4. Click + and install: mysql-connector-python
+
+
+
+
+
+
+
+
 pip install mysql-connector-python
 pip install pymysql
 
 import mysql.connector
-
