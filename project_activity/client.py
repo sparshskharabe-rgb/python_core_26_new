@@ -1,4 +1,5 @@
 from handlers.loginhandler import LoginHandler
+from exceptions.loginexception import LoginException
 
 # Entry point of your application. Main script
 
@@ -22,7 +23,14 @@ def promptForLogin():
     response = LoginHandler.handle_login(username, password)
     print(response)
     if response is None:
-        print("Invalid Credentials. Either username or password is incorrect")
+        try:
+            #print("Invalid Credentials. Either username or password is incorrect")
+            raise LoginException("Invalid Credentials. Either username or password is incorrect")
+        except LoginException as e:
+            print("Exception Reported", e.__class__)
+
+
+
     else:
         if response[2] == 0:
             #Display the customer dashboard

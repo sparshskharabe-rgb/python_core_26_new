@@ -11,7 +11,7 @@ class LoginDAO:
             query = "select userid, password, isadmin from login where userid='" + username +"' and password='" + password + "'"
             print(query)
             # Step 1 - Get the connection object
-            con = mysql.connector.connect(host='localhost', database='bankdb', user='root', password='root')
+            con = mysql.connector.connect(host='localhost', database='proj_activity', user='root', password='root')
             
             # Now execute the sqlquery 
             cursor = con.cursor() 
